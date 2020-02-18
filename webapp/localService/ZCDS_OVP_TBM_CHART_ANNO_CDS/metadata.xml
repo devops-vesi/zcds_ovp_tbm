@@ -1,0 +1,28 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+	<edmx:Reference xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"
+		Uri="./IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='DVP_750')/$value"><edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/></edmx:Reference>
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ZCDS_OVP_TBM_CHART_ANNO_CDS" xml:lang="fr" sap:schema-version="1">
+			<EntityType Name="ZCDS_OVP_TBM_CHART_ANNOType" sap:semantics="aggregate" sap:label="OVP TBM Main Chart" sap:content-version="1">
+				<Key><PropertyRef Name="ID"/></Key><Property Name="ID" Type="Edm.String" Nullable="false" sap:sortable="false" sap:filterable="false"/><Property Name="gjahr" Type="Edm.String" MaxLength="4" sap:aggregation-role="dimension" sap:display-format="NonNegative"
+					sap:label="Exercice comptable"/><Property Name="periodChart" Type="Edm.String" MaxLength="3" sap:aggregation-role="dimension" sap:display-format="NonNegative"
+					sap:label="Période" sap:quickinfo="Période comptable"/><Property Name="pspnr" Type="Edm.String" MaxLength="24" sap:aggregation-role="dimension" sap:display-format="NonNegative"
+					sap:label="Affaire"/><Property Name="bukrs" Type="Edm.String" MaxLength="4" sap:aggregation-role="dimension" sap:display-format="UpperCase" sap:label="Société"/><Property Name="posid" Type="Edm.String" MaxLength="24" sap:aggregation-role="dimension" sap:display-format="UpperCase" sap:label="Affaire"/><Property Name="zposition" Type="Edm.String" MaxLength="5" sap:aggregation-role="dimension" sap:display-format="UpperCase"
+					sap:label="Position"/><Property Name="post1" Type="Edm.String" MaxLength="40" sap:aggregation-role="dimension" sap:label="Désignation"
+					sap:quickinfo="PS: désignation (première ligne de texte)"/><Property Name="vernr" Type="Edm.String" MaxLength="8" sap:aggregation-role="dimension" sap:display-format="NonNegative"
+					sap:label="Responsable" sap:quickinfo="Matricule du responsable (chef de projet)"/><Property Name="zclient" Type="Edm.String" MaxLength="10" sap:aggregation-role="dimension" sap:display-format="UpperCase"
+					sap:label="Code Client"/><Property Name="name1" Type="Edm.String" MaxLength="35" sap:aggregation-role="dimension" sap:label="Nom" sap:quickinfo="Nom 1"/><Property Name="ktext" Type="Edm.String" MaxLength="20" sap:aggregation-role="dimension" sap:label="Désignation"
+					sap:quickinfo="Désignation générale"/><Property Name="butxt" Type="Edm.String" MaxLength="25" sap:aggregation-role="dimension" sap:label="Nom de la société"
+					sap:quickinfo="Code société ou nom de la société"/><Property Name="verna" Type="Edm.String" MaxLength="25" sap:aggregation-role="dimension" sap:label="Responsable (nom)"
+					sap:quickinfo="Responsable (chef de projet)"/><Property Name="avanceFact" Type="Edm.Decimal" Precision="17" Scale="3" sap:aggregation-role="measure" sap:label="Avance de facturation"
+					sap:filterable="false"/><Property Name="ecartFact" Type="Edm.Decimal" Precision="17" Scale="3" sap:aggregation-role="measure" sap:label="Ecart de facturation"
+					sap:filterable="false"/><Property Name="overdue" Type="Edm.Decimal" Precision="14" Scale="3" sap:aggregation-role="measure" sap:label="Retard client"
+					sap:filterable="false"/><Property Name="revYear" Type="Edm.Decimal" Precision="17" Scale="3" sap:aggregation-role="measure" sap:label="Chiffre affaire"
+					sap:filterable="false"/><Property Name="factYear" Type="Edm.Decimal" Precision="17" Scale="3" sap:aggregation-role="measure" sap:label="Facturation"
+					sap:filterable="false"/><Property Name="syUser" Type="Edm.String" MaxLength="8" sap:aggregation-role="dimension" sap:display-format="UpperCase"/><Property Name="uname" Type="Edm.String" MaxLength="12" sap:aggregation-role="dimension" sap:display-format="UpperCase"
+					sap:label="Nom d'utilisateur"/></EntityType>
+			<EntityContainer Name="ZCDS_OVP_TBM_CHART_ANNO_CDS_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx"><EntitySet Name="ZCDS_OVP_TBM_CHART_ANNO" EntityType="ZCDS_OVP_TBM_CHART_ANNO_CDS.ZCDS_OVP_TBM_CHART_ANNOType" sap:creatable="false"
+				sap:updatable="false" sap:deletable="false" sap:content-version="1"/></EntityContainer><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="./sap/ZCDS_OVP_TBM_CHART_ANNO_CDS/$metadata"/><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version" href="./sap/ZCDS_OVP_TBM_CHART_ANNO_CDS/$metadata"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

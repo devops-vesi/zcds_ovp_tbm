@@ -1,0 +1,199 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+	<edmx:Reference
+		Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='DVP_750')/$value"><edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/></edmx:Reference>
+	<edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='DVP_750')/$value"><edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/></edmx:Reference>
+	<edmx:Reference
+		Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='DVP_750')/$value"><edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/></edmx:Reference>
+	<edmx:Reference Uri="../../../sap/zcds_ovp_tbm_all_anno_cds/$metadata"><edmx:Include Namespace="ZCDS_OVP_TBM_ALL_ANNO_CDS" Alias="SAP"/></edmx:Reference>
+	<edmx:DataServices>
+		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="zcds_ovp_tbm_all_anno_cds_van.v1"><Annotations Target="ZCDS_OVP_TBM_ALL_ANNO_CDS.zcds_ovp_tbm_all_annoType/gjahr"/><Annotations/><Annotations Target="ZCDS_OVP_TBM_ALL_ANNO_CDS.zcds_ovp_tbm_all_annoType/period"/>
+			<Annotations Target="ZCDS_OVP_TBM_ALL_ANNO_CDS.zcds_ovp_tbm_all_annoType/pspnr"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="ZCDS_OVP_TBM_ALL_ANNO_CDS.zcds_ovp_tbm_all_annoType/periodChart"><Annotation Term="UI.HiddenFilter"/></Annotations><Annotations Target="ZCDS_OVP_TBM_ALL_ANNO_CDS.zcds_ovp_tbm_all_annoType/bukrs"/>
+			<Annotations Target="ZCDS_OVP_TBM_ALL_ANNO_CDS.zcds_ovp_tbm_all_annoType/testurl"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="ZCDS_OVP_TBM_ALL_ANNO_CDS.zcds_ovp_tbm_all_annoType/testurl3"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="ZCDS_OVP_TBM_ALL_ANNO_CDS.zcds_ovp_tbm_all_annoType/prtURL"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="ZCDS_OVP_TBM_ALL_ANNO_CDS.zcds_ovp_tbm_all_annoType/factURL"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="ZCDS_OVP_TBM_ALL_ANNO_CDS.zcds_ovp_tbm_all_annoType/wogbtr_i"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="ZCDS_OVP_TBM_ALL_ANNO_CDS.zcds_ovp_tbm_all_annoType/revPeriod"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="ZCDS_OVP_TBM_ALL_ANNO_CDS.zcds_ovp_tbm_all_annoType/prtYear"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="ZCDS_OVP_TBM_ALL_ANNO_CDS.zcds_ovp_tbm_all_annoType/prtPeriod"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="ZCDS_OVP_TBM_ALL_ANNO_CDS.zcds_ovp_tbm_all_annoType/prtPeriodwithcurr"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="ZCDS_OVP_TBM_ALL_ANNO_CDS.zcds_ovp_tbm_all_annoType/factPeriod"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="ZCDS_OVP_TBM_ALL_ANNO_CDS.zcds_ovp_tbm_all_annoType/factPeriodwithcurr"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="ZCDS_OVP_TBM_ALL_ANNO_CDS.zcds_ovp_tbm_all_annoType/ecartFactwithcurr"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="ZCDS_OVP_TBM_ALL_ANNO_CDS.zcds_ovp_tbm_all_annoType/objnr"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="ZCDS_OVP_TBM_ALL_ANNO_CDS.zcds_ovp_tbm_all_annoType/testurl2"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="ZCDS_OVP_TBM_ALL_ANNO_CDS.zcds_ovp_tbm_all_annoType/currentYear"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="ZCDS_OVP_TBM_ALL_ANNO_CDS.zcds_ovp_tbm_all_annoType/sUser"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="ZCDS_OVP_TBM_ALL_ANNO_CDS.zcds_ovp_tbm_all_annoType/syUser"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="ZCDS_OVP_TBM_ALL_ANNO_CDS.zcds_ovp_tbm_all_annoType/uname"><Annotation Term="UI.HiddenFilter"/></Annotations>
+			<Annotations Target="ZCDS_OVP_TBM_ALL_ANNO_CDS.zcds_ovp_tbm_all_annoType/ID"><Annotation Term="Common.FieldControl" EnumMember="Common.FieldControlType/Hidden"/><Annotation Term="UI.Hidden"/></Annotations>
+			<Annotations Target="ZCDS_OVP_TBM_ALL_ANNO_CDS.zcds_ovp_tbm_all_annoType/posid"><Annotation Term="Common.SemanticObject" String="PRT_RA"/></Annotations>
+			<Annotations Target="ZCDS_OVP_TBM_ALL_ANNO_CDS.zcds_ovp_tbm_all_annoType">
+				<Annotation Term="UI.DataPoint" Qualifier="targetEcartFactSum">
+					<Record><PropertyValue Property="Value" Path="targetEcartFactSum"/><PropertyValue Property="Title" String="Order Target Value"/>
+						<PropertyValue Property="ValueFormat">
+							<Record><PropertyValue Property="NumberOfFractionalDigits" Int="2"/></Record>
+						</PropertyValue>
+						<PropertyValue Property="CriticalityCalculation">
+							<Record><PropertyValue Property="ImprovementDirection" EnumMember="UI.ImprovementDirectionType/Maximize"/><PropertyValue Property="DeviationRangeLowValue" Decimal="9000"/><PropertyValue Property="ToleranceRangeLowValue" Decimal="8000"/></Record>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.DataPoint" Qualifier="targetFactPeriodSum">
+					<Record><PropertyValue Property="Value" Path="targetFactPeriodSum"/><PropertyValue Property="Title" String="Order Target Value"/>
+						<PropertyValue Property="ValueFormat">
+							<Record><PropertyValue Property="NumberOfFractionalDigits" Int="2"/></Record>
+						</PropertyValue>
+						<PropertyValue Property="CriticalityCalculation">
+							<Record><PropertyValue Property="ImprovementDirection" EnumMember="UI.ImprovementDirectionType/Maximize"/><PropertyValue Property="DeviationRangeLowValue" Decimal="9000"/><PropertyValue Property="ToleranceRangeLowValue" Decimal="8000"/></Record>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.DataPoint" Qualifier="targetFactYearSum">
+					<Record><PropertyValue Property="Value" Path="targetFactYearSum"/><PropertyValue Property="Title" String="Order Target Value"/>
+						<PropertyValue Property="ValueFormat">
+							<Record><PropertyValue Property="NumberOfFractionalDigits" Int="2"/></Record>
+						</PropertyValue>
+						<PropertyValue Property="CriticalityCalculation">
+							<Record><PropertyValue Property="ImprovementDirection" EnumMember="UI.ImprovementDirectionType/Maximize"/><PropertyValue Property="DeviationRangeLowValue" Decimal="9000"/><PropertyValue Property="ToleranceRangeLowValue" Decimal="8000"/></Record>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.DataPoint" Qualifier="targetFinCostSum">
+					<Record><PropertyValue Property="Value" Path="targetFinCostSum"/><PropertyValue Property="Title" String="Order Target Value"/>
+						<PropertyValue Property="ValueFormat">
+							<Record><PropertyValue Property="NumberOfFractionalDigits" Int="2"/></Record>
+						</PropertyValue>
+						<PropertyValue Property="CriticalityCalculation">
+							<Record><PropertyValue Property="ImprovementDirection" EnumMember="UI.ImprovementDirectionType/Maximize"/><PropertyValue Property="DeviationRangeLowValue" Decimal="9000"/><PropertyValue Property="ToleranceRangeLowValue" Decimal="8000"/></Record>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.DataPoint" Qualifier="targetPrtPeriodSum">
+					<Record><PropertyValue Property="Value" Path="targetPrtPeriodSum"/><PropertyValue Property="Title" String="Order Target Value"/>
+						<PropertyValue Property="ValueFormat">
+							<Record><PropertyValue Property="NumberOfFractionalDigits" Int="2"/></Record>
+						</PropertyValue>
+						<PropertyValue Property="CriticalityCalculation">
+							<Record><PropertyValue Property="ImprovementDirection" EnumMember="UI.ImprovementDirectionType/Maximize"/><PropertyValue Property="DeviationRangeLowValue" Decimal="9000"/><PropertyValue Property="ToleranceRangeLowValue" Decimal="8000"/></Record>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.DataPoint" Qualifier="targetPrtYearSum">
+					<Record><PropertyValue Property="Value" Path="targetPrtYearSum"/><PropertyValue Property="Title" String="Order Target Value"/>
+						<PropertyValue Property="ValueFormat">
+							<Record><PropertyValue Property="NumberOfFractionalDigits" Int="2"/></Record>
+						</PropertyValue>
+						<PropertyValue Property="CriticalityCalculation">
+							<Record><PropertyValue Property="ImprovementDirection" EnumMember="UI.ImprovementDirectionType/Maximize"/><PropertyValue Property="DeviationRangeLowValue" Decimal="9000"/><PropertyValue Property="ToleranceRangeLowValue" Decimal="8000"/></Record>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.DataPoint" Qualifier="targetRevSum">
+					<Record><PropertyValue Property="Value" Path="targetRevSum"/><PropertyValue Property="Title" String="Order Target Value"/>
+						<PropertyValue Property="ValueFormat">
+							<Record><PropertyValue Property="NumberOfFractionalDigits" Int="2"/></Record>
+						</PropertyValue>
+						<PropertyValue Property="CriticalityCalculation">
+							<Record><PropertyValue Property="ImprovementDirection" EnumMember="UI.ImprovementDirectionType/Maximize"/><PropertyValue Property="DeviationRangeLowValue" Decimal="9000"/><PropertyValue Property="ToleranceRangeLowValue" Decimal="8000"/></Record>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.DataPoint" Qualifier="targetRevYearSum">
+					<Record><PropertyValue Property="Value" Path="targetRevYearSum"/><PropertyValue Property="Title" String="Order Target Value"/>
+						<PropertyValue Property="ValueFormat">
+							<Record><PropertyValue Property="NumberOfFractionalDigits" Int="2"/></Record>
+						</PropertyValue>
+						<PropertyValue Property="CriticalityCalculation">
+							<Record><PropertyValue Property="ImprovementDirection" EnumMember="UI.ImprovementDirectionType/Maximize"/><PropertyValue Property="DeviationRangeLowValue" Decimal="9000"/><PropertyValue Property="ToleranceRangeLowValue" Decimal="8000"/></Record>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.LineItem" Qualifier="ecartFactView">
+					<Collection>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Désignation affaire"/><PropertyValue Property="Value" Path="post1"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Code affaire"/><PropertyValue Property="Value" Path="posid"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Montant écart facturation"/><PropertyValue Property="Value" Path="ecartFact"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.LineItem" Qualifier="factView">
+					<Collection>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Désignation affaire"/><PropertyValue Property="Value" Path="post1"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Code affaire"/><PropertyValue Property="Value" Path="posid"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Montant facturation"/><PropertyValue Property="Value" Path="factPeriod"/></Record>
+						<Record Type="UI.DataFieldWithUrl"><PropertyValue Property="Label" String="Link"/><PropertyValue Property="Value" Path="name1"/><PropertyValue Property="Url" Path="factURL"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.LineItem" Qualifier="factViewYear">
+					<Collection>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Désignation affaire"/><PropertyValue Property="Value" Path="post1"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Code affaire"/><PropertyValue Property="Value" Path="posid"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="factYear"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.LineItem" Qualifier="finCostView">
+					<Collection>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Désignation affaire"/><PropertyValue Property="Value" Path="post1"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Code affaire"/><PropertyValue Property="Value" Path="posid"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Montant frais financier"/><PropertyValue Property="Value" Path="finCost"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.LineItem" Qualifier="projOverView">
+					<Collection>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Affaire"/><PropertyValue Property="Value" Path="posid"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Periode"/><PropertyValue Property="Value" Path="period"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.LineItem" Qualifier="prtView">
+					<Collection>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Désignation affaire"/><PropertyValue Property="Value" Path="post1"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Code affaire"/><PropertyValue Property="Value" Path="posid"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Montant facturation"/><PropertyValue Property="Value" Path="prtPeriod"/></Record>
+						<Record Type="UI.DataFieldWithUrl"><PropertyValue Property="Label" String="Link"/><PropertyValue Property="Value" Path="zposition"/><PropertyValue Property="Url" Path="prtURL"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.LineItem" Qualifier="prtViewYear">
+					<Collection>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Désignation affaire"/><PropertyValue Property="Value" Path="post1"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Code affaire"/><PropertyValue Property="Value" Path="posid"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Montant facturation"/><PropertyValue Property="Value" Path="prtYear"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.LineItem" Qualifier="revView">
+					<Collection>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Désignation affaire"/><PropertyValue Property="Value" Path="post1"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Code affaire"/><PropertyValue Property="Value" Path="posid"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="revPeriod"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.LineItem" Qualifier="revViewYear">
+					<Collection>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Désignation affaire"/><PropertyValue Property="Value" Path="post1"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Code affaire"/><PropertyValue Property="Value" Path="posid"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Value" Path="revYear"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.LineItem" Qualifier="saledOrderView">
+					<Collection>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Désignation affaire"/><PropertyValue Property="Value" Path="post1"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Code affaire"/><PropertyValue Property="Value" Path="posid"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.LineItem" Qualifier="saledOrderViewY">
+					<Collection>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Désignation affaire"/><PropertyValue Property="Value" Path="post1"/></Record>
+						<Record Type="UI.DataField"><PropertyValue Property="Label" String="Code affaire"/><PropertyValue Property="Value" Path="posid"/></Record>
+					</Collection>
+				</Annotation>
+				<Annotation Term="UI.SelectionFields">
+					<Collection>
+						<PropertyPath>gjahr</PropertyPath>
+						<PropertyPath>period</PropertyPath>
+						<PropertyPath>bukrs</PropertyPath>
+					</Collection>
+				</Annotation>
+			</Annotations>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

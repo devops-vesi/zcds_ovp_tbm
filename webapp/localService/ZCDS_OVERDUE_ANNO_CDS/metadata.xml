@@ -1,0 +1,19 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+	<edmx:Reference xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"
+		Uri="./IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='DVP_750')/$value"><edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/></edmx:Reference>
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ZCDS_OVERDUE_ANNO_CDS" xml:lang="fr" sap:schema-version="1">
+			<EntityType Name="zcds_overdue_annoType" sap:semantics="aggregate" sap:label="OVP TBM Overdue" sap:content-version="1">
+				<Key><PropertyRef Name="ID"/></Key><Property Name="ID" Type="Edm.String" Nullable="false" sap:sortable="false" sap:filterable="false"/><Property Name="gjahr" Type="Edm.String" MaxLength="4" sap:aggregation-role="dimension" sap:display-format="NonNegative"
+					sap:label="Exercice comptable"/><Property Name="poper" Type="Edm.String" MaxLength="3" sap:aggregation-role="dimension" sap:display-format="NonNegative"
+					sap:label="Période comptable"/><Property Name="projk" Type="Edm.String" MaxLength="24" sap:aggregation-role="dimension" sap:display-format="NonNegative"
+					sap:label="N° affaire" sap:quickinfo="Affaire"/><Property Name="belnr" Type="Edm.String" MaxLength="10" sap:aggregation-role="dimension" sap:display-format="UpperCase" sap:label="Nº pièce"
+					sap:quickinfo="Numéro de pièce comptable"/><Property Name="post1" Type="Edm.String" MaxLength="40" sap:aggregation-role="dimension" sap:label="Libellé affaire"
+					sap:quickinfo="PS: désignation (première ligne de texte)"/><Property Name="overdueSum" Type="Edm.Decimal" Precision="14" Scale="3" sap:aggregation-role="measure" sap:label="Retard client"
+					sap:filterable="false"/><Property Name="targetOverdueSum" Type="Edm.Decimal" Precision="14" Scale="3" sap:aggregation-role="measure" sap:label="Retard client"
+					sap:filterable="false"/></EntityType>
+			<EntityContainer Name="ZCDS_OVERDUE_ANNO_CDS_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx"><EntitySet Name="zcds_overdue_anno" EntityType="ZCDS_OVERDUE_ANNO_CDS.zcds_overdue_annoType" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:content-version="1"/></EntityContainer><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="./sap/ZCDS_OVERDUE_ANNO_CDS/$metadata"/><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version" href="./sap/ZCDS_OVERDUE_ANNO_CDS/$metadata"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

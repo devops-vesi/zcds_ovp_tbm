@@ -1,0 +1,64 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+	<edmx:Reference
+		Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='DVP_750')/$value">
+		<edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/>
+	</edmx:Reference>
+	<edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='DVP_750')/$value">
+		<edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/>
+	</edmx:Reference>
+	<edmx:Reference
+		Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='DVP_750')/$value">
+		<edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/>
+	</edmx:Reference>
+	<edmx:Reference Uri="../../../sap/zcds_overdue_anno_cds/$metadata">
+		<edmx:Include Namespace="ZCDS_OVERDUE_ANNO_CDS" Alias="SAP"/>
+	</edmx:Reference>
+	<edmx:DataServices>
+		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="zcds_overdue_anno_cds_van.v1">
+			<Annotations Target="ZCDS_OVERDUE_ANNO_CDS.zcds_overdue_annoType/ID">
+				<Annotation Term="Common.FieldControl" EnumMember="Common.FieldControlType/Hidden"/>
+				<Annotation Term="UI.Hidden"/>
+			</Annotations>
+			<Annotations Target="ZCDS_OVERDUE_ANNO_CDS.zcds_overdue_annoType">
+				<Annotation Term="UI.DataPoint" Qualifier="targetOverdueSum">
+					<Record>
+						<PropertyValue Property="Value" Path="targetOverdueSum"/>
+						<PropertyValue Property="Title" String="Overdue Target Value"/>
+						<PropertyValue Property="ValueFormat">
+							<Record>
+								<PropertyValue Property="NumberOfFractionalDigits" Int="2"/>
+							</Record>
+						</PropertyValue>
+						<PropertyValue Property="CriticalityCalculation">
+							<Record>
+								<PropertyValue Property="ImprovementDirection" EnumMember="UI.ImprovementDirectionType/Maximize"/>
+								<PropertyValue Property="DeviationRangeLowValue" Decimal="9000"/>
+								<PropertyValue Property="ToleranceRangeLowValue" Decimal="8000"/>
+							</Record>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.LineItem" Qualifier="overdueView">
+					<Collection>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Label" String="Désignation affaire"/>
+							<PropertyValue Property="Value" Path="post1"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Label" String="Code affaire"/>
+							<PropertyValue Property="Value" Path="projk"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Label" String="Montant retard paiement"/>
+							<PropertyValue Property="Value" Path="targetOverdueSum"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Label" String="Montant retard paiement"/>
+							<PropertyValue Property="Value" Path="overdueSum"/>
+						</Record>
+					</Collection>
+				</Annotation>
+			</Annotations>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

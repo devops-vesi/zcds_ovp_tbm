@@ -1,0 +1,451 @@
+{
+	"_version": "1.7.0",
+	"start_url": "start.html",
+	"sap.app": {
+		"id": "cds_ovp_tbm_ra.cds_ovp_tbm_ra",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{app_title}}",
+		"description": "{{app_description}}",
+		"dataSources": {
+			"ZCDS_OVP_TBM_ALL_ANNO_CDS": {
+				"uri": "/sap/opu/odata/sap/ZCDS_OVP_TBM_ALL_ANNO_CDS/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"annotations": [
+						"ZCDS_OVP_TBM_ALL_ANNO_CDS_VAN"
+					],
+					"localUri": "localService/ZCDS_OVP_TBM_ALL_ANNO_CDS/metadata.xml"
+				}
+			},
+			"ZCDS_OVP_TBM_ALL_ANNO_CDS_VAN": {
+				"uri": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='ZCDS_OVP_TBM_ALL_ANNO_CDS_VAN',Version='0001')/$value/",
+				"type": "ODataAnnotation",
+				"settings": {
+					"localUri": "localService/ZCDS_OVP_TBM_ALL_ANNO_CDS/ZCDS_OVP_TBM_ALL_ANNO_CDS_VAN.xml"
+				}
+			},
+			"ZCDS_OVP_TBM_CHART_ANNO_CDS": {
+				"uri": "/sap/opu/odata/sap/ZCDS_OVP_TBM_CHART_ANNO_CDS/",
+				"type": "OData",
+				"settings": {
+					"localUri": "localService/ZCDS_OVP_TBM_CHART_ANNO_CDS/metadata.xml",
+					"annotations": [
+						"ZCDS_OVP_TBM_CHART_ANNO_CDS_VAN"
+					]
+				}
+			},
+			"ZCDS_OVP_TBM_CHART_ANNO_CDS_VAN": {
+				"uri": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='ZCDS_OVP_TBM_CHART_ANNO_CDS_VAN',Version='0001')/$value/",
+				"type": "ODataAnnotation",
+				"settings": {
+					"localUri": "localService/ZCDS_OVP_TBM_CHART_ANNO_CDS/ZCDS_OVP_TBM_CHART_ANNO_CDS_VAN.xml"
+				}
+			},
+			"ZCDS_OVERDUE_CDS": {
+				"uri": "/sap/opu/odata/sap/ZCDS_OVERDUE_CDS/",
+				"type": "OData",
+				"settings": {
+					"localUri": "localService/ZCDS_OVERDUE_CDS/metadata.xml",
+					"annotations": [
+						"ZCDS_OVERDUE_CDS_VAN"
+					]
+				}
+			},
+			"ZCDS_OVERDUE_CDS_VAN": {
+				"uri": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='ZCDS_OVERDUE_CDS_VAN',Version='0001')/$value/",
+				"type": "ODataAnnotation",
+				"settings": {
+					"localUri": "localService/ZCDS_OVERDUE_CDS/ZCDS_OVERDUE_CDS_VAN.xml"
+				}
+			},
+			"ZCDS_DSS_CDS": {
+				"uri": "/sap/opu/odata/sap/ZCDS_DSS_CDS/",
+				"type": "OData",
+				"settings": {
+					"localUri": "localService/ZCDS_DSS_CDS/metadata.xml",
+					"annotations": [
+						"ZCDS_DSS_CDS_VAN"
+					]
+				}
+			},
+			"ZCDS_DSS_CDS_VAN": {
+				"uri": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='ZCDS_DSS_CDS_VAN',Version='0001')/$value/",
+				"type": "ODataAnnotation",
+				"settings": {
+					"localUri": "localService/ZCDS_DSS_CDS/ZCDS_DSS_CDS_VAN.xml"
+				}
+			},
+			"ZCDS_OVERDUE_ANNO_CDS": {
+				"uri": "/sap/opu/odata/sap/ZCDS_OVERDUE_ANNO_CDS/",
+				"type": "OData",
+				"settings": {
+					"localUri": "localService/ZCDS_OVERDUE_ANNO_CDS/metadata.xml",
+					"annotations": [
+						"ZCDS_OVERDUE_ANNO_CDS_VAN"
+					]
+				}
+			},
+			"ZCDS_OVERDUE_ANNO_CDS_VAN": {
+				"uri": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='ZCDS_OVERDUE_ANNO_CDS_VAN',Version='0001')/$value/",
+				"type": "ODataAnnotation",
+				"settings": {
+					"localUri": "localService/ZCDS_OVERDUE_ANNO_CDS/ZCDS_OVERDUE_ANNO_CDS_VAN.xml"
+				}
+			}
+		},
+		"sourceTemplate": {
+			"id": "servicecatalog.connectivityComponentForManifest",
+			"version": "0.0.0"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_belize"
+		]
+	},
+	"sap.ui5": {
+		"dependencies": {
+			"minUI5Version": "${sap.ui5.dist.version}",
+			"libs": {
+				"sap.ovp": {}
+			}
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"uri": "i18n/i18n.properties"
+			},
+			"@i18n": {
+				"preload": true,
+				"type": "sap.ui.model.resource.ResourceModel",
+				"uri": "i18n/i18n.properties"
+			},
+			"ZCDS_OVP_TBM_ALL_ANNO_CDS": {
+				"dataSource": "ZCDS_OVP_TBM_ALL_ANNO_CDS",
+				"settings": {
+					"defaultCountMode": "Inline",
+					"useBatch": false
+				}
+			},
+			"ZCDS_OVP_TBM_CHART_ANNO_CDS": {
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"defaultOperationMode": "Server",
+					"defaultBindingMode": "OneWay",
+					"defaultCountMode": "Request",
+					"useBatch": false
+				},
+				"dataSource": "ZCDS_OVP_TBM_CHART_ANNO_CDS",
+				"preload": true
+			},
+			"ZCDS_OVERDUE_CDS": {
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"defaultOperationMode": "Server",
+					"defaultBindingMode": "OneWay",
+					"defaultCountMode": "Request"
+				},
+				"dataSource": "ZCDS_OVERDUE_CDS",
+				"preload": true
+			},
+			"ZCDS_DSS_CDS": {
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"defaultOperationMode": "Server",
+					"defaultBindingMode": "OneWay",
+					"defaultCountMode": "Request"
+				},
+				"dataSource": "ZCDS_DSS_CDS",
+				"preload": true
+			},
+			"ZCDS_OVERDUE_ANNO_CDS": {
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"defaultOperationMode": "Server",
+					"defaultBindingMode": "OneWay",
+					"defaultCountMode": "Request"
+				},
+				"dataSource": "ZCDS_OVERDUE_ANNO_CDS",
+				"preload": true
+			}
+		},
+		"extends": {
+			"extensions": {}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		}
+	},
+	"sap.ovp": {
+		"globalFilterModel": "ZCDS_OVP_TBM_ALL_ANNO_CDS",
+		"globalFilterEntityType": "ZCDS_OVP_TBM_ALL_ANNOType",
+		"containerLayout": "resizable",
+		"enableLiveFilter": true,
+		"considerAnalyticalParameters": true,
+		"cards": {
+			"card00": {
+				"model": "ZCDS_OVP_TBM_CHART_ANNO_CDS",
+				"template": "sap.ovp.cards.charts.analytical",
+				"settings": {
+					"title": "{{card00_title}}",
+					"chartAnnotationPath": "com.sap.vocabularies.UI.v1.Chart#factRevChartCopy",
+					"presentationAnnotationPath": "com.sap.vocabularies.UI.v1.PresentationVariant#top5Changed",
+					"dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint",
+					"entitySet": "ZCDS_OVP_TBM_CHART_ANNO",
+					"defaultSpan": {
+						"cols": 2
+					}
+				}
+			},
+			"card01": {
+				"model": "ZCDS_OVP_TBM_CHART_ANNO_CDS",
+				"template": "sap.ovp.cards.charts.analytical",
+				"settings": {
+					"title": "{{card01_title}}",
+					"chartAnnotationPath": "com.sap.vocabularies.UI.v1.Chart#ecartAvanceFactChartCopy",
+					"presentationAnnotationPath": "com.sap.vocabularies.UI.v1.PresentationVariant#top5Changed",
+					"dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint",
+					"entitySet": "ZCDS_OVP_TBM_CHART_ANNO"
+				}
+			},
+			"card02": {
+				"model": "ZCDS_DSS_CDS",
+				"template": "sap.ovp.cards.charts.analytical",
+				"settings": {
+					"title": "{{card02_title}}",
+					"chartAnnotationPath": "com.sap.vocabularies.UI.v1.Chart#dssAmountChart",
+					"presentationAnnotationPath": "com.sap.vocabularies.UI.v1.PresentationVariant#top5Changed",
+					"dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint",
+					"entitySet": "zcds_dss"
+				}
+			},
+			"card03": {
+				"model": "ZCDS_OVP_TBM_CHART_ANNO_CDS",
+				"template": "sap.ovp.cards.charts.analytical",
+				"settings": {
+					"title": "{{card03_title}}",
+					"chartAnnotationPath": "com.sap.vocabularies.UI.v1.Chart#finCostOverdueChartCopy",
+					"presentationAnnotationPath": "com.sap.vocabularies.UI.v1.PresentationVariant#top5Changed",
+					"dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint",
+					"entitySet": "ZCDS_OVP_TBM_CHART_ANNO"
+				}
+			},
+			"card04": {
+				"model": "ZCDS_OVP_TBM_ALL_ANNO_CDS",
+				"template": "sap.ovp.cards.list",
+				"settings": {
+					"title": "{{card04_title}}",
+					"entitySet": "ZCDS_OVP_TBM_ALL_ANNO",
+					"sortBy": "eco_p",
+					"sortOrder": "descending",
+					"addODataSelect": true,
+					"annotationPath": "com.sap.vocabularies.UI.v1.LineItem#saledOrderView",
+					"dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint#targetSalesOrderSum",
+					"defaultSpan": {
+						"rows": 1
+					}
+				}
+			},
+			"card05": {
+				"model": "ZCDS_OVP_TBM_ALL_ANNO_CDS",
+				"template": "sap.ovp.cards.list",
+				"settings": {
+					"title": "{{card05_title}}",
+					"entitySet": "ZCDS_OVP_TBM_ALL_ANNO",
+					"sortBy": "factPeriod",
+					"sortOrder": "descending",
+					"addODataSelect": true,
+					"dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint#targetFactPeriodSum",
+					"annotationPath": "com.sap.vocabularies.UI.v1.LineItem#factView",
+					"defaultSpan": {
+						"rows": 1
+					}
+				}
+			},
+			"card06": {
+				"model": "ZCDS_OVP_TBM_ALL_ANNO_CDS",
+				"template": "sap.ovp.cards.list",
+				"settings": {
+					"title": "{{card06_title}}",
+					"entitySet": "ZCDS_OVP_TBM_ALL_ANNO",
+					"sortBy": "revPeriod",
+					"sortOrder": "descending",
+					"addODataSelect": true,
+					"dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint#targetRevSum",
+					"annotationPath": "com.sap.vocabularies.UI.v1.LineItem#revView",
+					"defaultSpan": {
+						"rows": 1
+					}
+				}
+			},
+			"card07": {
+				"model": "ZCDS_OVP_TBM_ALL_ANNO_CDS",
+				"template": "sap.ovp.cards.list",
+				"settings": {
+					"title": "{{card07_title}}",
+					"entitySet": "ZCDS_OVP_TBM_ALL_ANNO",
+					"sortBy": "prtPeriod",
+					"sortOrder": "descending",
+					"addODataSelect": true,
+					"dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint#targetPrtPeriodSum",
+					"annotationPath": "com.sap.vocabularies.UI.v1.LineItem#prtView",
+					"defaultSpan": {
+						"rows": 1
+					}
+				}
+			},
+			"card08": {
+				"model": "ZCDS_OVP_TBM_ALL_ANNO_CDS",
+				"template": "sap.ovp.cards.list",
+				"settings": {
+					"title": "{{card08_title}}",
+					"entitySet": "ZCDS_OVP_TBM_ALL_ANNO",
+					"sortBy": "finCost",
+					"sortOrder": "descending",
+					"addODataSelect": true,
+					"identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification",
+					"dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint#targetFinCostSum",
+					"annotationPath": "com.sap.vocabularies.UI.v1.LineItem#finCostView",
+					"defaultSpan": {
+						"rows": 1
+					}
+				}
+			},
+			"card09": {
+				"model": "ZCDS_OVP_TBM_ALL_ANNO_CDS",
+				"template": "sap.ovp.cards.list",
+				"settings": {
+					"title": "{{card09_title}}",
+					"entitySet": "ZCDS_OVP_TBM_ALL_ANNO",
+					"sortBy": "eco_e",
+					"sortOrder": "descending",
+					"addODataSelect": true,
+					"annotationPath": "com.sap.vocabularies.UI.v1.LineItem#saledOrderViewY",
+					"dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint#targetSalesOrderSumY",
+					"defaultSpan": {
+						"rows": 1
+					}
+				}
+			},
+			"card10": {
+				"model": "ZCDS_OVP_TBM_ALL_ANNO_CDS",
+				"template": "sap.ovp.cards.list",
+				"settings": {
+					"title": "{{card10_title}}",
+					"entitySet": "ZCDS_OVP_TBM_ALL_ANNO",
+					"sortBy": "factYear",
+					"sortOrder": "descending",
+					"addODataSelect": true,
+					"dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint#targetFactYearSum",
+					"annotationPath": "com.sap.vocabularies.UI.v1.LineItem#factViewYear",
+					"defaultSpan": {
+						"rows": 1
+					}
+				}
+			},
+			"card11": {
+				"model": "ZCDS_OVP_TBM_ALL_ANNO_CDS",
+				"template": "sap.ovp.cards.list",
+				"settings": {
+					"title": "{{card11_title}}",
+					"entitySet": "ZCDS_OVP_TBM_ALL_ANNO",
+					"sortBy": "revYear",
+					"sortOrder": "descending",
+					"addODataSelect": true,
+					"dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint#targetRevYearSum",
+					"annotationPath": "com.sap.vocabularies.UI.v1.LineItem#revViewYear",
+					"defaultSpan": {
+						"rows": 1
+					}
+				}
+			},
+			"card12": {
+				"model": "ZCDS_OVP_TBM_ALL_ANNO_CDS",
+				"template": "sap.ovp.cards.list",
+				"settings": {
+					"title": "{{card12_title}}",
+					"entitySet": "ZCDS_OVP_TBM_ALL_ANNO",
+					"sortBy": "prtYear",
+					"sortOrder": "descending",
+					"addODataSelect": true,
+					"dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint#targetPrtYearSum",
+					"annotationPath": "com.sap.vocabularies.UI.v1.LineItem#prtViewYear",
+					"defaultSpan": {
+						"rows": 1
+					}
+				}
+			},
+			"card13": {
+				"model": "ZCDS_OVP_TBM_ALL_ANNO_CDS",
+				"template": "sap.ovp.cards.list",
+				"settings": {
+					"title": "{{card13_title}}",
+					"entitySet": "ZCDS_OVP_TBM_ALL_ANNO",
+					"sortBy": "ecartFact",
+					"sortOrder": "ascending",
+					"addODataSelect": true,
+					"dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint#targetEcartFactSum",
+					"selectionAnnotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#FilterPosition",
+					"annotationPath": "com.sap.vocabularies.UI.v1.LineItem#ecartFactView",
+					"defaultSpan": {
+						"rows": 1
+					}
+				}
+			},
+			"card14": {
+				"model": "ZCDS_OVP_TBM_ALL_ANNO_CDS",
+				"template": "sap.ovp.cards.list",
+				"settings": {
+					"title": "{{card14_title}}",
+					"entitySet": "ZCDS_OVP_TBM_ALL_ANNO",
+					"sortBy": "avanceFact",
+					"sortOrder": "ascending",
+					"addODataSelect": true,
+					"dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint#targetAvanceFactSum",
+					"selectionAnnotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#FilterPosition",
+					"annotationPath": "com.sap.vocabularies.UI.v1.LineItem#avanceFactView",
+					"defaultSpan": {
+						"rows": 1
+					}
+				}
+			},
+			"card15": {
+				"model": "ZCDS_OVERDUE_ANNO_CDS",
+				"template": "sap.ovp.cards.list",
+				"settings": {
+					"title": "{{card15_title}}",
+					"subTitle": "{{card15_subTitle}}",
+					"entitySet": "zcds_overdue_anno",
+					"sortBy": "overdueSum",
+					"sortOrder": "descending",
+					"addODataSelect": false,
+					"identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification",
+					"dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint#targetOverdueSum",
+					"annotationPath": "com.sap.vocabularies.UI.v1.LineItem#overdueView",
+					"defaultSpan": {
+						"rows": 1
+					}
+				}
+			}
+		}
+	},
+	"sap.platform.abap": {
+		"uri": "/sap/bc/ui5_ui5/sap/zcds_ovp_tbm/webapp",
+		"_version": "1.1.0"
+	}
+}
